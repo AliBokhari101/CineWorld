@@ -6,8 +6,8 @@ An elegant, full-featured **web-based cinema ticket booking system** built using
 🔧 Technologies Used
 
 - Frontend: HTML5, CSS3, JavaScript  
-- Styling Libraries**: Google Fonts, Animate.css  
-- Backend**: PHP  
+- Styling Libraries: Google Fonts, Animate.css  
+- Backend: PHP  
 - Database: MySQL (phpMyAdmin)  
 - Tools: XAMPP / WAMP, VS Code
 
@@ -30,7 +30,7 @@ An elegant, full-featured **web-based cinema ticket booking system** built using
     - ⚪ Standard — 500 PKR  
 - 🧾 Booking Summary
   - Movie info, date, time, selected seats, seat-wise pricing & total
-- 💳 **Payment Upload**
+- 💳 Payment Upload
   - Upload payment proof (screenshot)
   - Status: `verified` / `unverified`
 
