@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #011936;
+    color: #fff;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.summary-container {
+    background-color: #D8CBC7;
+    color: #011936;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+h2, h3 {
+    text-align: center;
+    color: #011936;
+    margin: 0;
+}
+
+.movie-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-info img {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details p {
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.seat-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #011936;
+}
+
+.seat-table th {
+    background-color: #F9DC5C;
+    color: #011936;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.seat-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.total-bill {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #011936;
+}
+
+form {
+    text-align: center;
+}
+
+.btn-proceed {
+    margin-top: 20px;
+    background-color: #06D6A0;
+    color: #011936;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-proceed:hover {
+    background-color: #04b588;
+}

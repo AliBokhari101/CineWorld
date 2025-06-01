@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+  }
+  
+  .user-header {
+    text-align: center;
+    background: #e50914;
+    padding-right: 40%;
+    font-size: 2.3rem;
+    color: #fff;
+    
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .movie-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .movie-tile:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-tile img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.85);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .movie-tile:hover .movie-overlay {
+    opacity: 1;
+  }
+  
+  .movie-overlay h2 {
+    font-size: 1.3rem;
+    color: #F9DC5C;
+   /* margin-bottom: 10px;*/
+    padding-top: 20px;
+  }
+  
+  .movie-overlay p {
+    font-size: 0.9rem;
+    color: #ccc;
+   /* margin-bottom: 10px;*/
+    padding-top: 20px;
+  }
+  
+  .movie-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+    height: 45px;
+    line-height: 21px;
+    max-width: 100%; 
+    white-space: nowrap;
+  }
+  
+  .buy {
+    background: #218838;
+  }
+  
+  .buy:hover {
+    background: #28a745;
+  }
+  
+  .trailer {
+    background: #db1212;
+  }
+  
+  .trailer:hover {
+    background: #ff2f01;
+  }
+ /* .btn.book {
+    background-color: #06D6A0;
+    color: #011936;
+  }
+  
+  .btn.book:hover {
+    background-color: #04b388;
+  }
+  
+  .btn.upcoming {
+    background-color: #ccc;
+    color: #555;
+    cursor: not-allowed;
+  }*/
+  /* Search Bar Styles */
+.search-bar {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    margin-top: -65px;
+    margin-left: 65%;
+    }
+    
+    .search-bar form {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    }
+    
+    .search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    }
+    
+    .search-bar button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 0 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    }
+    
+    .search-bar button:hover {
+    background-color: #c40812;
+    }

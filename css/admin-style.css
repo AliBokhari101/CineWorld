@@ -1,0 +1,224 @@
+/* Admin Dashboard Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Admin Navbar */
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: white;
+    padding: 15px 30px;
+}
+.admin-navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.admin-navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.admin-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.admin-navbar ul li a:hover {
+    color: #e50914;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #F9DC5C;
+    text-align: center;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #001124;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background: #F9DC5C;
+    color: #011936;
+}
+tr:nth-child(even) {
+    background: #112244;
+}
+
+/* Forms */
+form input, form textarea, form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+form button {
+    width: 100%;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+form button:hover {
+    background-color: #b00610;
+}
+
+/* Message Styles */
+.success-message, .admin-form-container .success {
+    color: #28a745;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.error-message, .admin-form-container .error {
+    color: #e50914;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.admin-welcome {
+    text-align: center;
+    padding: 50px 20px;
+}
+.admin-welcome h1 {
+    font-size: 2.5rem;
+}
+.admin-welcome p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+.card .btn {
+    background: #e50914;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+.card .btn:hover {
+    background: #b00610;
+}
+
+/* Admin Form Styles */
+.admin-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+.admin-form-container * {
+    box-sizing: border-box;
+}
+.admin-form-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+.admin-form-container input,
+.admin-form-container textarea,
+.admin-form-container select {
+    display: block;
+    width: calc(100% - 4px);
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.admin-form-container button {
+    width: 100%;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.admin-form-container button:hover {
+    background-color: #b00610;
+}
+
+/* Screening Group Layout */
+.screening-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.screening-group > div {
+    flex: 1;
+}
+.screening-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #011936;
+}
+
+/* Poster preview */
+#poster_preview img {
+    margin-top: 10px;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 0.9rem;
+    color: #aaa;
+}

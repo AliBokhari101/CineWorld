@@ -1,0 +1,212 @@
+/* ================================== */
+/* Global Styles */
+/* ================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #111;
+    color: white;
+}
+
+/* ================================== */
+/* Hero Section (Landing Page) */
+/* ================================== */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../assets/images/cinema-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-content h1 {
+    font-size: 4rem;
+    animation: fadeInDown 1s ease forwards;
+}
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+/* Updated btn class to include fade-in animation */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    animation: fadeInUp 2s ease-out forwards; /* Fade-in animation */
+}
+.btn:hover {
+    background: #b00610;
+}
+
+/* ================================== */
+/* Movies Section */
+/* ================================== */
+.movies-section {
+    padding: 50px 20px;
+    background: #222;
+}
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+.movie-card {
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.movie-card h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+/* ================================== */
+/* Footer */
+/* ================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* ================================== */
+/* Animations */
+/* ================================== */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================== */
+/* Modern Login & Registration Design */
+/* ================================== */
+.auth-body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.auth-form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-form h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.auth-input,
+.loginauth input {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-input::placeholder,
+.loginauth input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.auth-input:focus,
+.loginauth input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px #e50914;
+}
+
+.auth-form button,
+.loginauth button {
+    width: 100%;
+    padding: 14px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-form button:hover,
+.loginauth button:hover {
+    background: #b00610;
+    transform: scale(1.02);
+}
+
+.auth-form p {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.auth-form .error {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+.auth-form .success {
+    color: #28a745;
+    margin-top: 10px;
+}
+
